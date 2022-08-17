@@ -1,0 +1,130 @@
+
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variable */
+:root{
+    --navbar-height: 59px;
+}
+/* navigation */
+#navbar{
+    display: flex;
+}
+.navbar-conatiner{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* navigation:logo and image  */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 60px;
+    margin: 1px 1px;
+}
+/* navigation :list and styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 26px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    height: 633px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/bd.jpg') no-repeat center center/cover;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+/* services center */
+#services{
+    margin: 50px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+   display: flex;
+
+}
+
+.services-conatiner{
+    width: 100vw;
+    margin-top: 12%;
+}
+#services .box img{
+    height: 50px;
+    display: block;
+    margin: auto;
+
+
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 2px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 2px;
+    text-align: center;
+}
+.btn{
+    padding: 2px 3px;
+    border: 1px solid white;
+    background-color: brown;
+    border-radius: 4px;
+    color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+

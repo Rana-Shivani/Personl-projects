@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Baloo+Thambi+2&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color:  antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Varela Round', sans-serif;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 55px;
+    background-color: black;
+    color: white;
+   align-items: center;
+}
+nav ul li {
+    padding: 0px 12px;
+}
+
+.brand img{
+    width: 57px;
+    padding: 0px 4px;
+   
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 100vh;
+    background-color: black;
+    columns: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   color: white;
+   /* background-image: url(./bg\ img/); */
+   
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+   
+}
+.icon{
+    margin-top: 12px;
+    filter: brightness(0) invert(1);
+    size: 10px;
+}
+.icon i {
+    cursor: pointer;
+}
+#myprogressbar{
+    width: 80vw;
+}
+.songItemcontainer{
+    margin-top: 30px;
+}
+.songItem{
+    height: 35px;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 20px 0px;
+    justify-content: space-between;
+    border-radius: 30px;
+   
+}
+.songName{
+    padding: 10px 0px;
+}
+
+.songItem img{
+    width: 55px;
+    margin: 5px 10px;
+    border-radius: 40px;
+}
+.timestamp{
+  
+    margin: 0px 15px;
+}
+.timestamp i {
+    cursor: pointer;
+}
+.songInfo{
+    color: white;
+    position: absolute;
+    left: 0%;
+
+
+}
+.songInfo img{
+    height: 17px;
+    width: 103px;
+} 
+

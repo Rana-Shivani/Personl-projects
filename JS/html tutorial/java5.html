@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript popup boxes</title>
+</head>
+<body>
+<!-- alert popup -->
+<!-- <h2> javascript alert</h2>
+
+<button onclick="myFunction()">Try it</button>
+<script>
+    function myFunction()
+    {
+        alert("I am an alert box!");
+
+    } -->
+
+
+<!-- </script> -->
+
+<!-- confirm box popup -->
+
+<h2>confirm box alert</h2>
+<button onclick="myFunction()">try it </button>
+<p id="demo"></p>
+<script>
+    function myFunction()
+    {
+    
+    //    let dleatedpost =  confirm("Do you want to dleate post ?")
+    //     if(dleatedpost)
+    //     {
+    //     console.log("your post has been dleated");
+    //     }
+    //     else{
+    //         console.log("Your post has not been dleated");
+    //     }
+    // // var txt;
+    if(confirm("press button"))
+    {
+        txt = "you pressed ok";
+    }
+    else{
+        txt = "you pressed cancel";
+    }
+    document.getElementById("demo").innerHTML = txt;
+    
+
+    // promot popup
+// let text;
+//     let person = prompt("Please Enter Your Name:", "Harry Potter");
+    
+//     {
+//         if(person == null || person == "")
+//         text = "user cancel the prompt";
+
+//         else{
+//             text = "Hello "  + person + " ! How are you?";
+//             // text = "Hello " + person + "! How are you today?";
+//         }
+//         document.getElementById("demo").innerHTML = text;
+//     }
+// }
+    }
+
+</script>
+</body>
+</html>

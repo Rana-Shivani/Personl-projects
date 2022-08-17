@@ -1,0 +1,91 @@
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>events</title>
+      <style>
+          #btn{
+              padding: 10px 12px;
+              background-color: navajowhite;
+              font-size: 20px;
+              border-radius: 2px solid red;
+              color: black;
+          
+          }
+          
+  
+       
+      </style>
+  </head>
+  <body>
+      <div id="conatiner">
+          <h2>This is a tutorial of events</h2>
+         
+          <p id="para" class="random">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus totam molestias est laboriosam autem esse velit nam, delectus suscipit consequatur aut? Eveniet vitae id totam fugiat neque! Incidunt commodi, doloribus placeat, quaerat minima eos explicabo, veritatis animi itaque eius iusto aliquam amet provident! Recusandae, alias esse?</p>
+      </div>
+      <button id="btn" onclick = "Togglehide()">Show/Hide</button>
+  
+      <script>
+          let para = document.getElementById("para");
+          para.addEventListener("mouseover",  function run()
+          {
+              if(para.style.backgroundColor = "white"){
+  
+                  para.style.backgroundColor="red";
+              }
+              
+              else{
+                  para.style.backgroundColor="white";
+              }
+          });
+         para.addEventListener("mouseout", function run()
+         {
+          if(para.style.backgroundColor = "red"){
+              para.style.backgroundColor="white";
+  
+          }
+          else{
+              para.style.backgroundColor="red";
+  
+          }
+         })
+  
+  
+          // let btn = "";
+          function Togglehide(){
+              document.getElementById("btn").innerHTML = "show/hide";
+              // let para = document.getElementById("para");
+              if(para.style.display != "none"){
+  
+                  para.style.display = "none";
+              }
+  else {
+      para.style.display = "block";
+  }
+  
+          }
+  
+  // mouseover
+  
+  
+      </script>
+  
+    
+  
+  </body>
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
