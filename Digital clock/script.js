@@ -5,7 +5,7 @@
 // const secondE1 = document.getElementById("second")
 // const ampmE1 = document.getElementById("ampm")
 
-
+////////////////////////////////
 // function updateClock(){
 //     const date = new Date();
 //     let h = date.getHours();
